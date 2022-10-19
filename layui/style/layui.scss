@@ -1,0 +1,54 @@
+:root {
+    --global-primary-color: #009688;
+    --global-normal-color: #1e9fff;
+    --global-warm-color: #ffb800;
+    --global-danger-color: #ff5722;
+    --global-checked-color: #5fb878;
+    --global-info-color: #31BDEC;
+    --global-border-radius: 2px;
+    --global-neutral-color-1: #FAFAFA;
+    --global-neutral-color-2: #F6F6F6;
+    --global-neutral-color-3: #eeeeee;
+    --global-neutral-color-4: #e2e2e2;
+    --global-neutral-color-5: #dddddd;
+    --global-neutral-color-6: #d2d2d2;
+    --global-neutral-color-7: #cccccc;
+    --global-neutral-color-8: #c2c2c2;
+}
+:root {
+    --button-primary-text-color: #fff;
+    --button-primary-background-color: var(--global-primary-color);
+    --button-primary-border-color: var(--global-primary-color);
+    --button-normal-text-color: #fff;
+    --button-normal-background-color: var(--global-normal-color);
+    --button-normal-border-color: var(--global-normal-color);
+    --button-warm-text-color: #fff;
+    --button-warm-background-color: var(--global-warm-color);
+    --button-warm-border-color: var(--global-warm-color);
+    --button-danger-text-color: #fff;
+    --button-danger-background-color: var(--global-danger-color);
+    --button-danger-border-color: var(--global-danger-color);
+    --button-border-radius: var(--global-border-radius);
+    --button-border-color: var(--global-neutral-color-6);
+    --button-background-color: 0 0;
+    --button-text-color: #666;
+}
+:root {
+    --docsearch-logo-color: var(--global-primary-color);
+    --docsearch-primary-color: var(--global-primary-color);
+    --docsearch-searchbox-background: rgba(255, 255, 255, .02);
+    --docsearch-searchbox-focus-background: rgba(255, 255, 255, .02);
+    --docsearch-container-background: rgba(0, 0, 0, .1);
+    --docsearch-searchbox-shadow: inset 0 0 0 1px var(--docsearch-primary-color);
+}
+
+:root {
+    --input-border-radius: var(--global-border-radius);
+    --input-border-color: var(--global-neutral-color-3);
+}
+
+.layui-text {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,25 @@
+// 按钮组
+.lay-btn-group {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    .lay-btn {
+        margin-left: 0!important;
+        margin-right: 0!important;
+        border-left: 1px solid rgba(255,255,255,.5);
+        border-radius: 0;
+        &:first-child {
+            border-left: none;
+            border-radius: 2px 0 0 2px;
+        }
+        &+.lay-btn {
+            margin-left: 0;
+        }
+        &:last-child {
+            border-radius: 0 2px 2px 0;
+        }
+    }
+}

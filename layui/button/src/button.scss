@@ -1,0 +1,207 @@
+.lay-btn-container .lay-btn{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.lay-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    user-slayect: none;
+    -webkit-appearance:none;
+    height: 38px;
+    line-height: 1;
+    padding: 8px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    background: 0 0;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+    transition:.1s;
+    cursor: pointer;
+}
+.lay-btn.fluid{
+    width: 100%;
+}
+
+// 按钮容器
+.lay-btn-container {
+    font-size: 0;
+    display: block;
+    .lay-btn {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    &+.lay-btn {
+        margin-left: 0;
+    }
+}
+
+.lay-btn:hover {
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.lay-btn:disabled {
+    opacity: .5;
+    filter: alpha(opacity=50);
+    cursor: not-allowed;
+}
+
+.lay-btn.is-loading{
+    color: transparent !important;
+    pointer-events: none;
+    position: rlayative;
+    cursor: default;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        display: inline-block;
+        margin: auto;
+        border: 2px solid #fff;
+        border-bottom-color: transparent;
+        vertical-align: middle;
+        animation: spin 1s linear infinite
+    }
+}
+
+.lay-btn.is-round {
+    border-radius: 100px;
+}
+.lay-btn.is-circle {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.lay-btn-lg {
+    height: 44px;
+    padding: 0 25px;
+    font-size: 16px;
+}
+.lay-btn-sm {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.lay-btn-xs {
+    height: 22px;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.lay-btn.is-text{
+    color: #606266;
+    border: 0 solid transparent;
+    background-color: transparent;
+}
+
+// 原始按钮
+.lay-btn-default {
+    border-color: #d2d2d2;
+    color: #5f5f5f;
+}
+
+// 默认按钮
+.lay-btn-primary {
+    background-color: #009688;
+}
+.lay-btn-primary.is-plain {
+    background-color: transparent;
+    border-color: #009688;
+    color: #009688;
+}
+// 百搭按钮
+.lay-btn-normal {
+    background-color: #1e9fff;
+}
+.lay-btn-normal.is-plain{
+    background-color: transparent;
+    border-color: #1e9fff;
+    color: #1e9fff;
+}
+
+// 暖色按钮
+.lay-btn-warm {
+    background-color: #ffb800;
+}
+.lay-btn-warm.is-plain{
+    background-color: transparent;
+    border-color: #ffb800;
+    color: #ffb800;
+}
+
+// 警告按钮
+.lay-btn-danger {
+    background-color: #ff5722;
+}
+.lay-btn-danger.is-plain{
+    background-color: transparent;
+    border-color: #ff5722;
+    color: #ff5722;
+}
+
+// 信息按钮
+.lay-btn-info {
+    background-color: #909399;
+}
+.lay-btn-info.is-plain{
+    background-color: transparent;
+    border-color: #909399;
+    color: #909399;
+}
+
+.lay-btn-disabled, .lay-btn-disabled:active, .lay-btn-disabled:hover {
+    border-color: #eee!important;
+    background-color: #fbfbfb!important;
+    color: #d2d2d2!important;
+    cursor: not-allowed!important;
+    opacity: 1;
+}
+
+@keyframes bubbling {
+    0% {
+        background-position-y: 50%, 50%, 50%;
+    }
+    15% {
+        background-position-y: calc(50% - 3px), 50%, 50%;
+    }
+    30% {
+        background-position-y: calc(50% - 1px), calc(50% - 3px), 50%;
+    }
+    45% {
+        background-position-y: 50%, calc(50% - 1px), calc(50% - 3px);
+    }
+    60% {
+        background-position-y: 50%, 50%, calc(50% - 1px);
+    }
+    75% {
+        background-position-y: 50%, 50%,  50%;
+    }
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(180deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

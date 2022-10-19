@@ -1,0 +1,16 @@
+.nav-bar-title{
+    display: flex;
+    align-items: center;
+}
+.nav-bar-title .logo{
+    height: 3.5rem !important;
+}
+.container{
+    margin: 0 !important;
+    max-width: 100% !important;
+    padding: 2rem !important;;
+    box-sizing: border-box;
+}
+h2{
+    border-bottom: 0px solid transparent!important;
+}
