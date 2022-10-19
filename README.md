@@ -25,11 +25,11 @@ npm i
 ## 2 启动
 
 ```
-yarn dev(推荐)
+yarn docs:dev(推荐)
 
 or
 
-npm run dev
+npm run docs:dev
 ```
 
 ## 3 访问
