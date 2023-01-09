@@ -1,21 +1,65 @@
-.lay-btn-container .lay-btn{
-    margin-right: 10px;
-    margin-bottom: 10px;
+@import "../../style/layui.scss";
+
+.lay-btn-container .lay-btn {
+    margin-right: var(--layui-font-size-extra-small);
+    margin-bottom: var(--layui-font-size-extra-small);
 }
-.lay-btn{
+
+.lay-btn {
+    --layui-button-text-color: var(--layui-color-white); //文字颜色
+    --layui-button-bg-color: var(--layui-color-transparent); //背景颜色
+    --layui-button-border-color: var(--layui-border-color); //边框颜色
+    --layui-button-hover-text-color: var(--layui-color-default); //悬浮颜色
+    --layui-button-disabled-text-color: var(--layui-color-white); //禁用颜色
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     height: 38px;
-    line-height: 38px;
-    border: 1px solid transparent;
-    padding: 0 18px;
-    background-color: #009688;
-    color: #fff;
+    line-height: 1;
     white-space: nowrap;
-    text-align: center;
-    font-size: 14px;
-    border-radius: 2px;
     cursor: pointer;
+    color: var(--layui-button-text-color);
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+    font-weight: var(--layui-bottom-font-weight);
+    user-select: none;
+    vertical-align: middle;
+    background-color: var(--layui-button-bg-color);
+    border: var(--layui-border);
+    border-color: var(--layui-button-border-color);
+    padding: 8px 15px;
+    font-size: var(--layui-font-size-base);
+    border-radius: var(--layui-border-radius-base);
+    outline: none;
+
+    &.is-plain {
+        --layui-button-hover-text-color: var(--layui-color-primary);
+        --layui-button-hover-border-color: var(--layui-color-primary);
+        --layui-button-hover-bg-color: var(--layui-color-transparent);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--layui-button-hover-text-color);
+        border-color: var(--layui-button-hover-border-color);
+        background-color: var(--layui-button-hover-bg-color);
+    }
+
+    &.is-disabled {
+        opacity: .5;
+
+        &:hover,
+        &:focus {
+            cursor: not-allowed;
+            background-image: none;
+        }
+    }
+
 }
-.lay-btn.fluid{
+
+.lay-btn.fluid {
     width: 100%;
 }
 
@@ -23,32 +67,24 @@
 .lay-btn-container {
     font-size: 0;
     display: block;
+
     .lay-btn {
         margin-right: 10px;
         margin-bottom: 10px;
     }
+
     &+.lay-btn {
         margin-left: 0;
     }
 }
 
-.lay-btn:hover {
-    opacity: .8;
-    filter: alpha(opacity=80);
-}
-
-.lay-btn:disabled {
-    opacity: .5;
-    filter: alpha(opacity=50);
-    cursor: not-allowed;
-}
-
-.lay-btn.is-loading{
-    color: transparent !important;
+.lay-btn.is-loading {
+    color: transparent;
     pointer-events: none;
     position: rlayative;
     cursor: default;
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         left: 0;
@@ -70,10 +106,9 @@
 .lay-btn.is-round {
     border-radius: 100px;
 }
+
 .lay-btn.is-circle {
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
 }
 
 .lay-btn-lg {
@@ -81,18 +116,20 @@
     padding: 0 25px;
     font-size: 16px;
 }
+
 .lay-btn-sm {
     height: 30px;
     padding: 0 10px;
     font-size: 12px;
 }
+
 .lay-btn-xs {
     height: 22px;
     padding: 0 5px;
     font-size: 12px;
 }
 
-.lay-btn.is-text{
+.lay-btn.is-text {
     color: #606266;
     border: 0 solid transparent;
     background-color: transparent;
@@ -104,94 +141,194 @@
     color: #5f5f5f;
 }
 
-// 默认按钮
 .lay-btn-primary {
-    background-color: #009688;
+    --layui-button-text-color: var(--layui-color-white); //文字颜色
+    --layui-button-bg-color: var(--layui-color-primary); //背景颜色
+    --layui-button-border-color: var(--layui-color-primary); //边框颜色
+
+    --layui-button-hover-text-color: var(--layui-color-white); //悬浮文字颜色
+    --layui-button-hover-bg-color: var(--layui-color-primary); //悬浮背景颜色
+    --layui-button-hover-border-color: var(--layui-color-primary); //悬浮边框颜色
+
+    --layui-button-disabled-text-color: var(--layui-color-white); //禁用颜色
+
+    &.is-plain {
+        --layui-button-text-color: var(--layui-color-primary);
+        --layui-button-bg-color: var(--layui-color-transparent);
+
+        --layui-button-hover-text-color: var(--layui-color-white);
+        --layui-button-hover-border-color: var(--layui-color-primary);
+        --layui-button-hover-bg-color: var(--layui-color-primary);
+    }
 }
-.lay-btn-primary.is-plain {
-    background-color: transparent;
-    border-color: #009688;
-    color: #009688;
-}
+
+
 // 百搭按钮
 .lay-btn-normal {
-    background-color: #1e9fff;
-}
-.lay-btn-normal.is-plain{
-    background-color: transparent;
-    border-color: #1e9fff;
-    color: #1e9fff;
+    --layui-button-text-color: var(--layui-color-white); //文字颜色
+    --layui-button-bg-color: var(--layui-color-normal); //背景颜色
+    --layui-button-border-color: var(--layui-color-normal); //边框颜色
+
+    --layui-button-hover-text-color: var(--layui-color-white); //悬浮文字颜色
+    --layui-button-hover-bg-color: var(--layui-color-normal); //悬浮背景颜色
+    --layui-button-hover-border-color: var(--layui-color-normal); //悬浮边框颜色
+
+    --layui-button-disabled-text-color: var(--layui-color-white); //禁用颜色
+
+    &.is-plain {
+        --layui-button-text-color: var(--layui-color-normal);
+        --layui-button-bg-color: var(--layui-color-transparent);
+
+        --layui-button-hover-text-color: var(--layui-color-white);
+        --layui-button-hover-border-color: var(--layui-color-normal);
+        --layui-button-hover-bg-color: var(--layui-color-normal);
+    }
 }
 
 // 暖色按钮
-.lay-btn-warm {
-    background-color: #ffb800;
-}
-.lay-btn-warm.is-plain{
-    background-color: transparent;
-    border-color: #ffb800;
-    color: #ffb800;
+.lay-btn-warning {
+    --layui-button-text-color: var(--layui-color-white); //文字颜色
+    --layui-button-bg-color: var(--layui-color-warning); //背景颜色
+    --layui-button-border-color: var(--layui-color-warning); //边框颜色
+
+    --layui-button-hover-text-color: var(--layui-color-white); //悬浮文字颜色
+    --layui-button-hover-bg-color: var(--layui-color-warning); //悬浮背景颜色
+    --layui-button-hover-border-color: var(--layui-color-warning); //悬浮边框颜色
+
+    --layui-button-disabled-text-color: var(--layui-color-white); //禁用颜色
+
+    &.is-plain {
+        --layui-button-text-color: var(--layui-color-warning);
+        --layui-button-bg-color: var(--layui-color-transparent);
+
+        --layui-button-hover-text-color: var(--layui-color-white);
+        --layui-button-hover-border-color: var(--layui-color-warning);
+        --layui-button-hover-bg-color: var(--layui-color-warning);
+    }
 }
 
 // 警告按钮
 .lay-btn-danger {
-    background-color: #ff5722;
+    --layui-button-text-color: var(--layui-color-white); //文字颜色
+    --layui-button-bg-color: var(--layui-color-danger); //背景颜色
+    --layui-button-border-color: var(--layui-color-danger); //边框颜色
+
+    --layui-button-hover-text-color: var(--layui-color-white); //悬浮文字颜色
+    --layui-button-hover-bg-color: var(--layui-color-danger); //悬浮背景颜色
+    --layui-button-hover-border-color: var(--layui-color-danger); //悬浮边框颜色
+
+    --layui-button-disabled-text-color: var(--layui-color-white); //禁用颜色
+
+    &.is-plain {
+        --layui-button-text-color: var(--layui-color-danger);
+        --layui-button-bg-color: var(--layui-color-transparent);
+
+        --layui-button-hover-text-color: var(--layui-color-white);
+        --layui-button-hover-border-color: var(--layui-color-danger);
+        --layui-button-hover-bg-color: var(--layui-color-danger);
+    }
 }
-.lay-btn-danger.is-plain{
-    background-color: transparent;
-    border-color: #ff5722;
-    color: #ff5722;
-}
+
 
 // 信息按钮
 .lay-btn-info {
-    background-color: #909399;
-}
-.lay-btn-info.is-plain{
-    background-color: transparent;
-    border-color: #909399;
-    color: #909399;
+    --layui-button-text-color: var(--layui-color-white); //文字颜色
+    --layui-button-bg-color: var(--layui-color-info); //背景颜色
+    --layui-button-border-color: var(--layui-color-info); //边框颜色
+
+    --layui-button-hover-text-color: var(--layui-color-white); //悬浮文字颜色
+    --layui-button-hover-bg-color: var(--layui-color-info); //悬浮背景颜色
+    --layui-button-hover-border-color: var(--layui-color-info); //悬浮边框颜色
+
+    --layui-button-disabled-text-color: var(--layui-color-white); //禁用颜色
+
+    &.is-plain {
+        --layui-button-text-color: var(--layui-color-info);
+        --layui-button-bg-color: var(--layui-color-transparent);
+
+        --layui-button-hover-text-color: var(--layui-color-white);
+        --layui-button-hover-border-color: var(--layui-color-info);
+        --layui-button-hover-bg-color: var(--layui-color-info);
+    }
 }
 
-.lay-btn-disabled, .lay-btn-disabled:active, .lay-btn-disabled:hover {
-    border-color: #eee!important;
-    background-color: #fbfbfb!important;
-    color: #d2d2d2!important;
-    cursor: not-allowed!important;
-    opacity: 1;
+
+.lay-btn-success {
+    --layui-button-text-color: var(--layui-color-white); //文字颜色
+    --layui-button-bg-color: var(--layui-color-success); //背景颜色
+    --layui-button-border-color: var(--layui-color-success); //边框颜色
+
+    --layui-button-hover-text-color: var(--layui-color-white); //悬浮文字颜色
+    --layui-button-hover-bg-color: var(--layui-color-success); //悬浮背景颜色
+    --layui-button-hover-border-color: var(--layui-color-success); //悬浮边框颜色
+
+    --layui-button-disabled-text-color: var(--layui-color-white); //禁用颜色
+
+    &.is-plain {
+        --layui-button-text-color: var(--layui-color-success);
+        --layui-button-bg-color: var(--layui-color-transparent);
+
+        --layui-button-hover-text-color: var(--layui-color-white);
+        --layui-button-hover-border-color: var(--layui-color-success);
+        --layui-button-hover-bg-color: var(--layui-color-success);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes bubbling {
     0% {
         background-position-y: 50%, 50%, 50%;
     }
+
     15% {
         background-position-y: calc(50% - 3px), 50%, 50%;
     }
+
     30% {
         background-position-y: calc(50% - 1px), calc(50% - 3px), 50%;
     }
+
     45% {
         background-position-y: 50%, calc(50% - 1px), calc(50% - 3px);
     }
+
     60% {
         background-position-y: 50%, 50%, calc(50% - 1px);
     }
+
     75% {
-        background-position-y: 50%, 50%,  50%;
+        background-position-y: 50%, 50%, 50%;
     }
 }
 
 @keyframes spin {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  
+
     50% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
-  
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}

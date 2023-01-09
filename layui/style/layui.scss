@@ -1,9 +1,63 @@
 :root {
     color-scheme: light;
-    --layui-primary-color: #009688; //默认
-    --layui-normal-color: #1e9fff; //百塔
-    --layui-warm-color: #ffb800; //暖色
-    --layui-danger-color: #ff5722; //警告
-    --layui-disabled-color:#fbfbfb;//禁用
-    --layui-border-radius: 2px;
+    --layui-color-white: #ffffff;
+    --layui-color-black: #000000;
+    --layui-color-default: #5f5f5f;
+    --layui-color-transparent: transparent;
+
+    --layui-color-primary: #009688; // 主要颜色，同品牌色
+    --layui-color-normal: #1e9fff; //百搭颜色
+    --layui-color-warning: #ffb800; // 警告、需注意类型提示
+    --layui-color-danger: #ff5722; // 失败、错误、告警
+    --layui-color-success: #67c23a; // 成功、正确
+    --layui-color-info: #909399; // 通知、一般提示、执行中
+
+    --layui-color-text: #252b3a; // 正文文本
+    --layui-color-text-weak: #575d6c; // 弱化的正文信息
+    --layui-color-placeholder: #8a8e99; // 占位符
+    --layui-color-divider: #adb0b8; // 分割线
+
+
+    --layui-color-initial: #e9edfa; // 初始化、未执行
+    --layui-color-waiting: #9faad7; //等待中
+
+
+    // 禁用
+    --layui-color-disabled: #f5f5f6; // disabled背景颜色
+    --layui-color-disabled-line: #dfe1e6; // disabled边框颜色
+    --layui-color-disabled-text: #adb0b8; // disabled文字颜色
+
+
+    // 阴影
+    --layui-shadow: rgba(0, 0, 0, 0.2); //阴影色
+    --layui-light-shadow: rgba(0, 0, 0, 0.1); //弱化阴影色
+
+    // 边框
+    --layui-border-width: 1px;
+    --layui-border-style: solid;
+    --layui-border-color: var(--layui-color-divider);
+    --layui-border-color-hover: var(--layui-text-color-disabled);
+    --layui-border: var(--layui-border-width) var(--layui-border-style) var(--layui-border-color);
+
+    // 文字
+    --layui-font-size-large: 18px;
+    --layui-font-size-medium: 16px;
+    --layui-font-size-base: 14px;
+    --layui-font-size-small: 12px;
+    --layui-font-size-extra-small: 10px;
+    --layui-font-family: "Hlayuivetica Neue", Hlayuivetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    --layui-font-weight-primary: 500;
+    --layui-font-line-height-primary: 24px;
+
+    --layui-index-normal: 1;
+    --layui-index-top: 1000;
+    --layui-index-popper: 2000;
+
+    // 圆角
+    --layui-border-radius-base: 4px;
+    --layui-border-radius-small: 2px;
+    --layui-border-radius-medium: 8px;
+    --layui-border-radius-large: 12px;
+    --layui-border-radius-round: 20px;
+    --layui-border-radius-circle: 100%;
 }

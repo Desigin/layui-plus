@@ -27,16 +27,18 @@ export default defineComponent({
           };
 
         const btnClass = computed(() => {
-            const { type, plain, round, circle, size, fluid, loading, text } = props;
+            const { type, plain, round, circle, size, fluid, disabled, loading, text } = props;
             const origin = `lay-btn lay-btn-${size}`;
             const isType = ` lay-btn-${type}`;
             const isPlain = plain ? ' is-plain' : '';
             const isRound = round ? ' is-round' : '';
             const isCircle = circle ? ' is-circle' : '';
             const isFluid = fluid ? ' fluid' : '';
+            const isDisabled = disabled ? ' is-disabled' : '';
+            //待完善
             const isLoading = loading ? ' is-loading' : '';
             const isText = text ? ' is-text' : '';
-            return `${origin}${isPlain}${isRound}${isCircle}${isFluid}${isLoading}${isText}${isType}`;
+            return `${origin}${isType}${isPlain}${isRound}${isCircle}${isFluid}${isDisabled}${isLoading}${isText}`;
         })
 
         return () => {

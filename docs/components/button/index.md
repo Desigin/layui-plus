@@ -13,8 +13,9 @@
     <lay-button type='default'>原始按钮</lay-button>
     <lay-button type='primary'>默认按钮</lay-button>
     <lay-button type='normal'>百搭按钮</lay-button>
-    <lay-button type='warm'>暖色按钮</lay-button>
+    <lay-button type='warning'>暖色按钮</lay-button>
     <lay-button type='danger'>警告按钮</lay-button>
+    <lay-button type='success'>成功按钮</lay-button>
     <lay-button type='info'>信息按钮</lay-button>
 </div>
 </template>
@@ -30,8 +31,9 @@
   <lay-button type='default' plain>原始按钮</lay-button>
   <lay-button type='primary' plain>默认按钮</lay-button>
   <lay-button type='normal' plain>百搭按钮</lay-button>
-  <lay-button type='warm' plain>暖色按钮</lay-button>
+  <lay-button type='warning' plain>暖色按钮</lay-button>
   <lay-button type='danger' plain>警告按钮</lay-button>
+  <lay-button type='success' plain>成功按钮</lay-button>
   <lay-button type='info' plain>信息按钮</lay-button>
 </div>
 </template>
@@ -48,8 +50,9 @@
   <lay-button disabled type='default'>原始按钮</lay-button>
   <lay-button disabled type='primary'>默认按钮</lay-button>
   <lay-button disabled type='normal'>百搭按钮</lay-button>
-  <lay-button disabled type='warm'>暖色按钮</lay-button>
+  <lay-button disabled type='warning'>暖色按钮</lay-button>
   <lay-button disabled type='danger'>警告按钮</lay-button>
+  <lay-button disabled type='success'>成功按钮</lay-button>
   <lay-button disabled type='info'>信息按钮</lay-button>
 </div>
 </template>
@@ -86,17 +89,19 @@
     <lay-button type='default' round>原始按钮</lay-button>
     <lay-button type='primary' round>默认按钮</lay-button>
     <lay-button type='normal' round>百搭按钮</lay-button>
-    <lay-button type='warm' round>暖色按钮</lay-button>
+    <lay-button type='warning' round>暖色按钮</lay-button>
     <lay-button type='danger' round>警告按钮</lay-button>
+    <lay-button type='success' round>成功按钮</lay-button>
     <lay-button type='info' round>信息按钮</lay-button>
 </div>
 <div class="lay-btn-container">
     <lay-button type='default' circle>A</lay-button>
     <lay-button type='primary' circle>B</lay-button>
     <lay-button type='normal' circle>C</lay-button>
-    <lay-button type='warm' circle>D</lay-button>
+    <lay-button type='warning' circle>D</lay-button>
     <lay-button type='danger' circle>E</lay-button>
-    <lay-button type='info' circle>F</lay-button>
+    <lay-button type='success' circle>F</lay-button>
+    <lay-button type='info' circle>G</lay-button>
 </div>
 </template>
 ```
@@ -173,7 +178,6 @@ lay-button 参数
 |   icon    |                           `string`                           |    --     | 可选，点击背景触发的事件         |
 |   width   |                           `string`                           |    --     | 可选，弹出框宽度(e.g '300px')    |
 | disabled  |                          `boolean`                           |   false   | 可选，是否禁用button             |
-| autofocus |                          `boolean`                           |   false   | 可选，按钮加载时是否自动获得焦点 |
 
 lay-button 事件
 |  参数   |             类型              | 默认  | 说明           |
