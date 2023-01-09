@@ -1,0 +1,108 @@
+// 基础变量
+$layui-global-bg: var(--layui-global-bg, #f3f6f8);                   // 全局带底色背景
+$layui-global-bg-normal: var(--layui-global-bg-normal, #ffffff);     // 全局白色背景
+
+$layui-base-bg: var(--layui-base-bg, #ffffff);                       // 基础区块背景白色
+$layui-base-bg-dark: var(--layui-base-bg-dark, #333854);             // 基础区块背景深色(固定)
+
+$layui-brand: var(--layui-brand, #5e7ce0);                           // 品牌色
+$layui-brand-foil: var(--layui-brand-foil, #859bff);                 // 品牌色辅助色、正衬色
+$layui-brand-hover: var(--layui-brand-hover, #7693f5);               // 品牌色高亮色（加亮）
+$layui-brand-active: var(--layui-brand-active, #526ecc);             // 品牌色激活色（加深）
+$layui-brand-active-focus: var(--layui-brand-active-focus, #344899); // 品牌色焦点色（重度加深）
+
+$layui-contrast: var(--layui-contrast, #f66f6a);                     // 品牌色撞色、对比色、反衬色、第二品牌色
+$layui-text: var(--layui-text, #252b3a);                             // 正文文本
+$layui-text-weak: var(--layui-text-weak, #575d6c);                   // 弱化的正文信息（手风琴子项，表头）
+$layui-aide-text: var(--layui-aide-text, #8a8e99);                   // 辅助文本、帮助信息（面包屑）
+$layui-aide-text-stress: var(--layui-aide-text-stress, #575d6c);     // 辅助文本、帮助信息里的强调色
+$layui-placeholder: var(--layui-placeholder, #8a8e99);               // 占位符
+$layui-light-text: var(--layui-light-text, #ffffff);                 // 有色深色背景下字体颜色（固定）
+$layui-dark-text: var(--layui-dark-text, #252b3a);                   // 有色浅色背景下字体颜色（固定）
+$layui-link: var(--layui-link, #526ecc);                             // 链接文本颜色
+$layui-link-active: var(--layui-link-active, #344899);               // 链接文本悬停/激活颜色
+$layui-link-light: var(--layui-link-light, #96adfa);                 // 深色背景下链接文本颜色
+$layui-link-light-active: var(--layui-link-light-active, #beccfa);   // 深色背景下链接文本悬停/激活颜色
+$layui-line: var(--layui-line, #adb0b8);                             // 边框分割线，仅用于边框
+$layui-dividing-line: var(--layui-dividing-line, #dfe1e6);           // 内容分割线，用于内容之间的分割
+$layui-block: var(--layui-block, #ffffff);                           // 大面积的不可折叠区块的背景色（例如顶部导航背景色）
+$layui-area: var(--layui-area, #f8f8f8);                             // 可折叠区块的背景色（展开区域颜色）
+$layui-danger: var(--layui-danger, #f66f6a);                         // 失败、错误、告警
+$layui-warning: var(--layui-warning, #fac20a);                       // 警告、需注意类型提示
+$layui-success: var(--layui-success, #50d4ab);                       // 成功、正确
+$layui-waiting: var(--layui-waiting, #9faad7);                       // 等待中
+$layui-info: var(--layui-info, #5e7ce0);                             // 通知、一般提示、执行中
+$layui-initial: var(--layui-initial, #e9edfa);                       // 初始化、未执行
+$layui-unavailable: var(--layui-unavailable, #f5f5f6);               // 不可用、禁用状态
+$layui-shadow: var(--layui-shadow, rgba(0, 0, 0, 0.2));              // 阴影色
+$layui-light-shadow: var(--layui-light-shadow, rgba(0, 0, 0, 0.1));  // 弱化阴影色
+
+// 图标
+$layui-icon-text: var(--layui-icon-text, #252b3a);                           // 文字图标颜色，同 正文颜色
+$layui-icon-bg: var(--layui-icon-bg, #ffffff);                               // svg图标 背景色
+$layui-icon-fill: var(--layui-icon-fill, #d3d5d9);                           // svg图标 灰色填充色
+$layui-icon-fill-hover: var(--layui-icon-fill-hover, #adb5ce);               // svg图标 灰色填充色悬停反馈色
+$layui-icon-fill-active: var(--layui-icon-fill-active, #5e7ce0);             // svg图标 高亮填充色（激活状态）
+$layui-icon-fill-active-hover: var(--layui-icon-fill-active-hover, #526ecc); // svg图标 高亮填充色悬停反馈色
+
+// 表单
+$layui-form-control-line: var(--layui-form-control-line, #adb0b8);                           // 表单控件边框色，同 边框分割线
+$layui-form-control-line-hover: var(--layui-form-control-line-hover, #575d6c);               // 表单控件边框悬停反馈色
+$layui-form-control-line-active: var(--layui-form-control-line-active, #5e7ce0);             // 表单控件边框激活色，用于获得焦点
+$layui-form-control-line-active-hover: var(--layui-form-control-line-active-hover, #344899); // 表单控件边框激活色，用于获得焦点且悬停
+
+// 列表
+$layui-list-item-active-bg: var(--layui-list-item-active-bg, #5e7ce0);                       // 列表类型单选选中背景
+$layui-list-item-active-text: var(--layui-list-item-active-text, #ffffff);                   // 列表类型单选选中背景搭配文本，同 有色深色背景下字体颜色（固定）
+$layui-list-item-active-hover-bg: var(--layui-list-item-active-hover-bg, #526ecc);           // 列表类型单选选中背景悬停反馈色（仅用于分页等）
+$layui-list-item-hover-bg: var(--layui-list-item-hover-bg, #f2f5fc);                         // 列表类型普通选项悬停背景
+$layui-list-item-hover-text: var(--layui-list-item-hover-text, #526ecc);                     // 列表类型普通选项悬停背景搭配文本
+$layui-list-item-selected-bg: var(--layui-list-item-selected-bg, #e9edfa);                   // 列表类型多选被选中的行色，仅用于表格类
+$layui-list-item-strip-bg: var(--layui-list-item-strip-bg, #f2f5fc);                         // 列表类型斑马纹色，仅用于表格类
+
+// 禁用
+$layui-disabled-bg: var(--layui-disabled-bg, #f5f5f6);     // disabled背景颜色
+$layui-disabled-line: var(--layui-disabled-line, #dfe1e6); // disabled边框颜色
+$layui-disabled-text: var(--layui-disabled-text, #adb0b8); // disabled文字颜色
+$layui-primary-disabled: var(--layui-primary-disabled, #beccfa); //主要按钮disabled状态文字颜色
+$layui-icon-fill-active-disabled: var(--layui-icon-fill-active-disabled, #beccfa);  // svg图标激活状态禁用色
+$layui-icon-fill-active-disabled: var(--layui-icon-fill-active-disabled, #beccfa);  // svg图标激活状态禁用色
+
+// 特殊背景色
+$layui-label-bg: var(--layui-label-bg, #eef0f5);                             // 默认标签化选项背景色
+$layui-connected-overlay-bg: var(--layui-connected-overlay-bg, #ffffff);     // 有连接点的弹出菜单层背景色
+$layui-connected-overlay-line: var(--layui-connected-overlay-line, #526ecc); // 有连接点的弹出菜单层边框色
+$layui-fullscreen-overlay-bg: var(--layui-fullscreen-overlay-bg, #ffffff);   // 全屏类型的弹出内容层背景色（模态弹窗）
+$layui-feedback-overlay-bg: var(--layui-feedback-overlay-bg, #464d6e);       // 信息提示反馈类型的漂浮层背景色（toast、popover）
+$layui-feedback-overlay-text: var(--layui-feedback-overlay-text, #dfe1e6);   // 信息提示反馈类型的漂浮层背景色搭配文本色
+$layui-embed-search-bg: var(--layui-embed-search-bg, #f2f5fc);               // 被嵌套的无边框搜索框背景色
+$layui-embed-search-bg-hover: var(--layui-embed-search-bg-hover, #eef0f5);   // 被嵌套的无边框搜索框背景色
+$layui-float-block-shadow: var(--layui-float-block-shadow, rgba(94, 124, 224, 0.3));  // 特殊浮层背景色（待修正）
+$layui-highlight-overlay: var(--layui-highlight-overlay, rgba(255, 255, 255, 0.8)); // 局部半透明全局浮层背景色（比如底部）
+
+// 按钮
+$layui-primary: var(--layui-primary, #5e7ce0);                // 主要按钮，同品牌色
+$layui-primary-hover: var(--layui-primary-hover, #7693f5);    // 主要按钮悬停
+$layui-primary-active: var(--layui-primary-active, #344899);  // 主要按钮激活
+
+$layui-contrast-hover: var(--layui-contrast-hover, #ff8b87);  // 突出按钮悬停
+$layui-contrast-active: var(--layui-contrast-active, #de504e);// 突出按钮激活
+
+// 状态
+$layui-danger-line: var(--layui-danger-line, #f66f6a);  // 失败边框
+$layui-danger-bg: var(--layui-danger-bg, #ffeeed);      // 失败底色
+
+$layui-warning-line: var(--layui-warning-line, #fa9841);// 警告边框
+$layui-warning-bg: var(--layui-warning-bg, #fff3e8);    // 警告底色
+
+$layui-info-line: var(--layui-info-line, #5e7ce0);      // 通知边框
+$layui-info-bg: var(--layui-info-bg, #f2f5fc);          // 通知底色
+
+$layui-success-line: var(--layui-success-line, #50d4ab);// 成功边框
+$layui-success-bg: var(--layui-success-bg, #edfff9);    // 成功底色
+
+$layui-primary-line: var(--layui-primary-line, #5e7ce0);// 主要边框
+$layui-primary-bg: var(--layui-primary-bg, #f2f5fc);    // 主要底色
+
+$layui-default-line: var(--layui-default-line, #5e7ce0);// 默认边框
+$layui-default-bg: var(--layui-default-bg, #f3f6f8);    // 默认底色

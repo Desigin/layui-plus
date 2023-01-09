@@ -1,0 +1,30 @@
+// 字号大小变量
+
+$layui-font-size: var(--layui-font-size, 12px); //正文、卡片副标题
+$layui-font-size-card-title: var(--layui-font-size-card-title, 14px); //卡片标题
+$layui-font-size-page-title: var(--layui-font-size-page-title, 16px); //页面标题
+$layui-font-size-modal-title: var(--layui-font-size-modal-title, 18px); //弹窗标题、数字
+$layui-font-size-price: var(--layui-font-size-price, 20px); //购买价格
+$layui-font-size-data-overview: var(--layui-font-size-data-overview, 24px); //数据总览
+
+$layui-font-size-icon: var(--layui-font-size-icon, 16px);     //图标大小
+$layui-font-size-sm: var(--layui-font-size-sm, 12px);  //当组件size为'sm'时使用此字号大小
+$layui-font-size-md: var(--layui-font-size-md, 14px);  //当组件size为''时使用此字号大小
+$layui-font-size-lg: var(--layui-font-size-lg, 16px);  //当组件size为'lg'时使用此字号大小
+
+$font-title-weight: bold;
+$font-content-weight: normal;
+
+$line-height-base: 1.5;
+
+@mixin font-content() {
+  font-size: $layui-font-size;
+  font-weight: $font-content-weight;
+  line-height: $line-height-base;
+}
+
+@mixin font-title($font-size: $layui-font-size-page-title) {
+  font-size: $font-size;
+  font-weight: $font-title-weight;
+  line-height: $line-height-base;
+}

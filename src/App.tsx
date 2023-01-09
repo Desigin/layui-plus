@@ -1,23 +1,22 @@
 import './style.css'
 import { defineComponent } from 'vue'
+import { Button as LayButton } from '../layui/button'
+import '../layui/style/layui.scss'
 
 export default defineComponent({
-    name:'App',
+    name: 'App',
     setup() {
         return () => {
             return <>
-            <Lay-button-group>
-                <lay-button type="default">按钮</lay-button>
-                <lay-button type="primary">按钮</lay-button>
-                <lay-button type="normal">按钮</lay-button>
-                <lay-button type="warm">按钮</lay-button>
-                <lay-button type="danger">按钮</lay-button>
-                <lay-button type="info">按钮</lay-button>
-                <lay-button type="disabled">按钮</lay-button>
-            </Lay-button-group>
+                <LayButton type="default">原始按钮</LayButton>
+                <LayButton type="primary">默认按钮</LayButton>
+                <LayButton type="normal">百塔按钮</LayButton>
+                <LayButton type="warm">暖色按钮</LayButton>
+                <LayButton type="danger">警告按钮</LayButton>
+                <LayButton type="disabled">禁用按钮</LayButton>
             </>
         }
-        
+
     },
 })
 

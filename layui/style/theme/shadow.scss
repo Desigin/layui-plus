@@ -1,0 +1,12 @@
+//阴影变量
+
+$layui-shadow-length-base: var(--layui-shadow-length-base, 0 1px 4px 0); //直接铺陈在页面上方的元素 (card等)
+
+$layui-shadow-length-slide-left: var(--layui-shadow-length-slide-left, -2px 0 8px 0); //向左滑动时出现在右侧边缘的阴影 (dataTable固定右侧列向左滑动)
+$layui-shadow-length-slide-right: var(--layui-shadow-length-slide-right, 2px 0 8px 0); //向右滑动时出现在左侧边缘的阴影 (dataTable固定左侧列向右滑动)
+$layui-shadow-length-connected-overlay : var(--layui-shadow-connected-overlay, 0 2px 8px 0); //有连接点的弹出(覆盖)层 (DatePicker Cascader Select TagsInput Pagination的下拉菜单等)
+
+$layui-shadow-length-hover : var(--layui-shadow-length-hover, 0 4px 16px 0); //涉及到hover的地方
+$layui-shadow-length-feedback-overlay : var(--layui-shadow-length-feedback-overlay, 0 4px 16px 0); //信息提示反馈类 (PopOver Tooltip Toast StepsGuide等)
+
+$layui-shadow-length-fullscreen-overlay: var(--layui-shadow-fullscreen-overlay, 0 8px 40px 0); //无连接点的弹出(覆盖)层 (Drawer Modal ImagePreview等)
